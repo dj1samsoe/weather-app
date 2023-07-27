@@ -53,7 +53,7 @@ body {
 
 #weatherForm {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
 }
 
 .appHeading {
@@ -118,13 +118,8 @@ body {
 }
 
 /* Media Query for Responsive */
-@media screen and (max-width: 307px) {
-  #weatherForm {
-    flex-direction: column;
-  }
-
-  #weatherForm input {
-    text-align: center;
-    margin-bottom: 1rem;
+@media screen and (max-width: 450px) {
+  .weatherContainer img {
+    width: 75%;
   }
 }
