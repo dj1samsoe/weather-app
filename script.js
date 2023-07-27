@@ -41,23 +41,23 @@ form.addEventListener("submit", function (e) {
       // Updating the Images according to the weather
       if (weatherMain == "Clear") {
         image.src = `sunny.png`;
-        myWeatherContainer.style.backgroundColor = "#322653";
+        myWeatherContainer.style.backgroundColor = "#333";
       }
       if (weatherMain == "Clouds") {
         image.src = `cloudy.png`;
-        myWeatherContainer.style.backgroundColor = "#322653";
+        myWeatherContainer.style.backgroundColor = "#333";
       }
       if (weatherMain == "Rain") {
         image.src = `rainy.png`;
-        myWeatherContainer.style.backgroundColor = "#322653";
+        myWeatherContainer.style.backgroundColor = "#333";
       }
       if (weatherMain == "Drizzle") {
         image.src = `drizzle.png`;
-        myWeatherContainer.style.backgroundColor = "#322653";
+        myWeatherContainer.style.backgroundColor = "#333";
       }
       if (weatherMain == "Haze") {
         image.src = `haze.png`;
-        myWeatherContainer.style.backgroundColor = "#322653";
+        myWeatherContainer.style.backgroundColor = "#333";
       }
 
       // Updating dates
