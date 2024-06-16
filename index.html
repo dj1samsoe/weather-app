@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Weather App</title>
-    <link rel="icon" type="image/x-icon" href="/Images/favicon.png" />
+    <link rel="icon" type="image/x-icon" href="./sunny.png" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
@@ -20,34 +20,48 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body>
+  <body
+    class="w-screen min-h-screen bg-gray-800 flex flex-col justify-center items-center"
+  >
     <!-- Main Container for the weather web app -->
-    <div class="weatherContainer">
-      <h2 class="appHeading">Weather App</h2>
+    <div
+      class="box-border h-full w-96 shadow-md shadow-gray-500 border border-gray-500 rounded-lg flex flex-col space-y-4 justify-center items-center px-5 py-7 text-white"
+    >
+      <h2 class="text-center text-3xl font-bold">Simple Weather App</h2>
       <!-- Input Divition for city name -->
-      <div class="search">
-        <form action="" id="weatherForm">
-          <input
-            type="text"
-            name=""
-            id="weatherInput"
-            placeholder="Enter your city here..."
-          />
-          <button class="searchBtn" type="submit">
-            <ul>
-              <li><i class="fa-solid fa-magnifying-glass"></i></li>
-            </ul>
-          </button>
-        </form>
-      </div>
+
+      <form
+        action=""
+        id="weatherForm"
+        class="flex space-x-2 justify-center items-center w-full"
+      >
+        <input
+          type="text"
+          name=""
+          id="weatherInput"
+          placeholder="Enter your city here..."
+          class="w-full px-3 py-2 rounded-md border border-gray-200 text-black"
+        />
+        <button class="text-white py-2 px-3 border rounded-md" type="submit">
+          <ul>
+            <li><i class="fa-solid fa-magnifying-glass"></i></li>
+          </ul>
+        </button>
+      </form>
+
       <!-- Output Will show on the screen -->
-      <h2 id="city"></h2>
-      <img src="." alt="" id="weatherImage" />
-      <p class="weatherMain" id="weatherMain"></p>
-      <h2 id="temp"><span class="temp"></span></h2>
-      <div class="todayDates"></div>
-      <div id="todayTime"></div>
+      <div class="flex flex-col space-y-2 justify-center items-center">
+        <div class="flex gap-2 items-center">
+          <h2 id="city" class="text-xl font-bold"></h2>
+        </div>
+        <img src="." alt="" id="weatherImage" class="w-24" />
+        <p class="weatherMain" id="weatherMain"></p>
+        <h2 id="temp"><span class="temp"></span></h2>
+        <div class="todayDates"></div>
+        <div id="todayTime"></div>
+      </div>
     </div>
   </body>
   <script src="script.js"></script>
